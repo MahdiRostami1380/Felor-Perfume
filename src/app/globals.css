@@ -2,20 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer components {
+  .section-container {
+    @apply container px-3 mx-auto py-8;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .btn {
+    @apply rounded-[10px] px-7 py-3 font-extrabold transition border w-fit;
+  }
+
+  .btn-primary {
+    @apply bg-[#AB572D] border-[#AB572D] hover:text-[#AB572D] hover:bg-transparent;
+  }
+
+  .section-header {
+    @apply text-xl md:text-4xl lg:text-5xl font-semibold;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: DaniloCatalina;
+  src: url(/Fonts/DaniloCatalina.ttf);
+}
+
+@font-face {
+  font-family: SatoshiVariable;
+  src: url(/Fonts/SatoshiVariable.ttf);
 }
