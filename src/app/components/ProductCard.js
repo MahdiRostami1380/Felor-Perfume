@@ -14,7 +14,7 @@ export default function ProductCard({
   return (
     <Link
       className={twMerge(
-        "group cursor-pointer w-full md:w-[260px] h-[442px] rounded-md bg-LinearGradientProductCard transition-[transform] duration-500 py-5 px-2 flex items-center justify-between flex-col overflow-hidden",
+        "group cursor-pointer w-full sm:w-[260px] h-[442px] rounded-md bg-LinearGradientProductCard transition-[transform] duration-500 py-5 px-2 flex items-center justify-between flex-col overflow-hidden",
         className
       )}
       href={link ?? "/"}

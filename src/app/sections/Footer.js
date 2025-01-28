@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-[#141414]">
       <div className="section-container flex justify-between items-center gap-14 lg:gap-28 2xl:gap-56 flex-col lg:flex-row">
         <Subscribe />
-        <div className="flex justify-between items-center gap-14 grow-[1] w-full lg:w-auto flex-col md:flex-row">
+        <div className="flex justify-between items-center md:items-start gap-14 grow-[1] w-full lg:w-auto flex-col md:flex-row">
           {SiteMap.map((category, index) => (
             <div
               key={index}

@@ -10,7 +10,7 @@ export default function ProductsSlider() {
   const [loading, setLoading] = useState(false);
   const [itemsArray, setItemsArray] = useState([]);
   const [space, setSpace] = useState(null);
-  const [cardWidth, setCarWidth] = useState(null);
+  const [cardWidth, setCardWidth] = useState(null);
 
   let toGenerateTailwind = [
     "translate-x-[900px]",
@@ -124,27 +124,27 @@ export default function ProductsSlider() {
   useEffect(() => {
     if (bestProducts.length !== 0) {
       if (screenWidth >= 1536) {
-        setCarWidth(260);
+        setCardWidth(260);
         setSpace((1512 - 1040) / 3);
         setItemsArray(find4());
       } else if (screenWidth >= 1280) {
-        setCarWidth(260);
+        setCardWidth(260);
         setSpace((1256 - 1040) / 3);
         setItemsArray(find4());
       } else if (screenWidth >= 1024) {
-        setCarWidth(260);
+        setCardWidth(260);
         setSpace((1000 - 780) / 2);
         setItemsArray(find3());
       } else if (screenWidth >= 768) {
-        setCarWidth(260);
+        setCardWidth(260);
         setSpace(744 - 520);
         setItemsArray(find2());
       } else if (screenWidth >= 640) {
-        setCarWidth(260);
+        setCardWidth(260);
         setSpace(616 - 520);
         setItemsArray(find2());
       } else {
-        setCarWidth(screenWidth - 24);
+        setCardWidth(screenWidth - 24);
         setSpace(12);
         setItemsArray(find1());
       }

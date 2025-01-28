@@ -20,11 +20,14 @@ export default function Subscribe() {
         className="rounded-xl overflow-hidden w-full flex"
       >
         <input
-          className="py-2 px-4 bg-[#1d1d1d] grow-[1] outline-none placeholder:text-[#3f3f3f]"
+          className="py-2 px-4 bg-[#1d1d1d] w-4/5 outline-none placeholder:text-[#3f3f3f]"
           type="text"
           placeholder="Your email here"
         />
-        <button type="submit" className="bg-[#AB572D] py-2 px-4">
+        <button
+          type="submit"
+          className="bg-[#AB572D] py-2 px-4 grow-[1] hover:text-[#AB572D] hover:bg-transparent transition"
+        >
           Submit
         </button>
       </form>
