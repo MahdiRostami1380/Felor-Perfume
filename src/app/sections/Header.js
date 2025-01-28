@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="section-container">
       <div className="flex justify-between items-center select-none">
-        <div className="font-DaniloCatalina text-4xl bg-[linear-gradient(to_bottom,#AB572D,#A5470F,#EC9A52,#AB5829)] inline text-transparent bg-clip-text">
+        <div className="bg-clip-android-chrome font-DaniloCatalina text-4xl bg-[linear-gradient(to_bottom,#AB572D,#A5470F,#EC9A52,#AB5829)] inline text-transparent bg-clip-text">
           <Link href={"/"}>Felor</Link>
         </div>
         <nav className="hidden md:flex gap-6 lg:gap-12">

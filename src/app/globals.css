@@ -30,7 +30,6 @@
   src: url(/Fonts/SatoshiVariable.ttf);
 }
 
-.grow-input {
-  flex-grow: 1;
-  -moz-flex-grow: 1;
+.bg-clip-android-chrome {
+  -webkit-background-clip: text;
 }
